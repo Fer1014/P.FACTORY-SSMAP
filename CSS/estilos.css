@@ -1,191 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.container {
+    max-width: 1100px;
 }
-
-body{
-    font-family: 'Open Sans', sans-serif;
-}
-
-nav{
-    background-color: rgb(255, 255, 255);
-}
-nav .logo{
-    color:black;
-    font-size: 24px;
-    line-height: 70px;
-    font-weight: 900;
-    margin-left: 20px;
-}
-nav ul li{
-    display: inline-block;
-    margin-right: 30px 0px;
-}
-nav ul{
-    float: right;
-    margin-right: 15px;
-    padding: 23px 0;
-   
-}
-nav ul li a{
-    color: black;
-    font-size: 15px;
-    padding: 8px 6px;
-    text-decoration: none;
-}
-nav ul li a:hover{
-    color: rgb(1, 245, 253);
-}
-
-/****** HEADER *********/
-
-header .banner{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    background: url('../img/Inicio.png');
-    background-repeat: no-repeat;
-    background-position: center;
+header {
+    background-image: url('/img/Inicio.png');
     background-size: cover;
-}
-header .banner .texto_header_eslogan{
-    font-size: 25px;
-    color:rgb(97, 97, 97);
-} 
-header .banner .texto_header{
-    font-size: 35px;
-    line-height: 70px;
-    font-weight: 900;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    color: black;
-    text-align: center;
-}
-header .banner .texto_signin{
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 95%);
-    padding: 30px;
-    color: black;
-    text-align: center;
-    background-color: gray;
-    border-radius: 20px;
-    opacity: 85%;
+    height: 750px;
+    position: relative;
     
 }
-.texto_signin li a:hover{
-    text-decoration: none;
-    display: block;
-    color: rgb(1, 245, 253);
-}
-
-
-/********** BENEFICIOS ***************/
-.video{
-    width: 100%;
-    padding: 30px;
-    background-color: #c5c5c5;
-}
-.video .texto_beneficios{
-    font-size: 35px;
-    line-height: 70px;
-    font-weight: 900;
+header h2{
     margin-left: 20px;
-}
-.video .seccion_video{
-    background-color: rgb(0, 0, 0);
-    border: 1px solid gray;
-    max-width: 800px;
-    height: auto;
-    margin: auto;
+    font-weight: lighter;
+    color: white;
 }
 
-.video .seccion_video .videoyoutube{
-    position: relative;
-    height: 0;
-    padding-top: 50%;
-    margin: 10px;
-}
-.video .seccion_video .videoyoutube iframe{
+.title {
+    color: rgb(0, 0, 0);
+    font-size: 60px;
     position: absolute;
-    top: 0;
-    height: 0;
-    width: 100%;
-    height: 100%;
-}
-.video .texto_beneficios_video{
-    font-size: 25px;
-    margin: 20px;
-    color: black;
-    text-align: center;
-}
-.video .row{
-    width: 60%;
-    margin: 50px auto;
-    display: flex;
-    gap:55px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.video .row img:hover{
-    transform: scale(1.02);
-    transition: 0.5s;
-    box-shadow: 0px 0px 3px 3px;
-    border-radius: 58px;
+.btn{
+    background-color: rgb(94, 94, 94);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
- /************ EQUIPO ****************/
-
-.equipo{
-    width: 100%;
-    padding: 30px;
-    background-color: #ffffff;
+.logo{
+    width: 40px;
+    border-radius: 10px;
 }
-.equipo .texto_equipo{
-    font-size: 35px;
-    line-height: 70px;
-    font-weight: 900;
+
+
+@media(max-width:992px){
+    .navbar-nav{
+        background-color: rgb(0, 0, 0);
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        padding: 20px;
+    }
+}
+nav{
+    z-index: 100;
+}
+
+#row-beneficios{
+    background-color: #8febcf;    
+}
+.row{
+    margin: 20;
+}
+#row-beneficios button{
+    background-color: rgb(15, 153, 3);
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+}
+#row-beneficios button:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+#row-beneficios button:hover{
+    color: blueviolet;
+}
+/*
+#row-nosotros{
+    transform: translateY(-50%);
+}
+*/
+
+.row button {
     margin-left: 20px;
 }
-.equipo .row1{
-    width: 60%;
-    margin: 50px auto;
-    display: flex;
-    gap:55px;
+
+div #row-nosotros{
+    margin-top: 20px;
+    background-color: azure;
+    padding-bottom: 20px;
 }
-.equipo .row2{
-    width: 60%;
-    margin: 50px auto;
-    display: flex;
-    gap:55px;
+div .imgplan{
+    padding-top: 10px;
+    padding-left: 25%;   
+    width: 80%;
+  }
+  
+div .plangratuito{
+      background: rgba(153, 225, 141, 1);
+      width: 22rem;
+      margin-left: 27%;
+      border-radius: 15px;
+      height: 10rem;
+      padding-top: 25px;
+      margin-bottom: 10px;      
+}
+  
+div .btnadquirir{
+      border-radius: 15px;
+      margin-bottom: 20px;
 }
 
-.equipo .row1 img:hover{
-    transform: scale(1.02);
-    transition: 0.5s;
-    box-shadow: 0px 0px 3px 3px;
-    border-radius: 58px;
-}
-.equipo .row2 img:hover{
-    transform: scale(1.02);
-    transition: 0.5s;
-    box-shadow: 0px 0px 3px 3px;
-    border-radius: 58px;
+#row-planes{
+    background-color: darkgray;
 }
 
-/**************** CONTACTANOS ***************/
+#row-testimonios{
+    background-color: aliceblue;
+}
+
 .contact
 {
     align-items: flex-start;
     display: flex;
     flex-direction: row;
-    margin-top: -1%;
     background-color: #000000;
 }
 
@@ -275,120 +206,17 @@ input[type=submit]:hover {
     display: table;
     clear: both;
   }
-  
-@media screen and (max-width: 900px) {
-    .col-25, .col-75, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
+
+@media(max-width:992px){
+    .header{
+        background-color: rgb(255, 255, 255);
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        padding: 20px;
     }
 }
-
-.container-form .btn-enviar{
-    background: #5070D1;
-    font-weight: 500;
-    font-size: 18px;
-    height: 3rem;
-    color: white;
-    border-radius: 6px;
-    box-sizing: border-box;
-    border: 1px solid #FFFFFF;
-    width: 25%;
-    margin-top: 20px;
-}
-
-.contact_header
-{
-    color: white;
-}
-
-.contact_weight {
-    font-weight: 600;
-    color: #FFFFFF;
-}
-
-
-@media(max-width:900px){
-    .equipo .row1{
-        display: block;
-    }
-    .equipo .row2{
-        display: block;
-    }
-    .equipo .row1 img{
-        width: 100% ;
-    }
-    .equipo .row2 img{
-        width: 100%;
-    }
-    
-}
-@media(max-width:900px){
-    .video .row{
-        display: block;
-    }
-    .video .row img{
-        width: 100% ;
-    }
-    
-}
-
-@media(max-width:900px) {
-    .icono_hambur{
-        width: 30px;
-        position: absolute;
-        top: 30px;
-    }
-    .icono_hambur span{
-        height: 3px;
-        display: block;
-        background-color: black;
-        margin-bottom: 4px;
-    }
-
-    nav{
-        position: relative;
-    }
-    
-    nav .logo{
-        margin-left: 50px; 
-    }
-
-    nav ul{
-        float: none;
-        width: 300px;
-        padding: 0;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: -100%;
-        background-color: white;
-        margin: 0px;
-        padding-top: 60px;
-        transition: 1.5s;
-        z-index: 3;
-    }
-    nav ul li{
-        display: block;
-        padding: 10px 40px;
-    }
-    nav ul li a{
-        font-size: 18px;
-        padding: 10px 40px;
-
-    }
-
-    .abrir{
-        left: 0;
-    }
-    .cerrar{
-        display: block;
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        padding: 0;
-        top: 20px;
-        right: 10px;
-        color: black;
-        font-size: 30px;
+@media(max-width:320px){
+    #contact{
+        text-align: center;        
     }
 }
